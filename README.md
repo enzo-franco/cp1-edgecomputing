@@ -20,7 +20,11 @@ A proposta é demonstrar como a automação pode ser aplicada para preservar a q
 
 O sistema utiliza um sensor **LDR (Light Dependent Resistor)** para medir a intensidade luminosa do ambiente.
 
-Com base nesses dados, o Arduino classifica a luminosidade em diferentes níveis e aciona LEDs indicadores para representar a condição do ambiente.
+Com base nesses dados, o Arduino classifica a luminosidade em diferentes níveis e aciona LEDs indicadores para representar a condição do ambiente:
+
+- 🟢 Verde → condição ideal  
+- 🟡 Amarelo → atenção  
+- 🔴 Vermelho → excesso de luz (prejudicial)  
 
 ---
 
@@ -32,7 +36,7 @@ Com base nesses dados, o Arduino classifica a luminosidade em diferentes níveis
 - 💡 3x LEDs:
   - 🟢 Verde → luminosidade ideal  
   - 🟡 Amarelo → atenção  
-  - 🔵 Azul → alta luminosidade  
+  - 🔴 Vermelho → alta luminosidade  
 - 🔩 3x Resistores 220Ω  
 - 🧩 Protoboard  
 - 🔗 Jumpers  
@@ -52,7 +56,7 @@ O Arduino lê esses valores e define o estado do ambiente:
 |----------------|----------------|
 | Baixa luz      | LED verde      |
 | Luz moderada   | LED amarelo    |
-| Alta luz       | LED azul       |
+| Alta luz       | LED vermelho   |
 
 ---
 
@@ -76,6 +80,14 @@ Os valores de referência podem ser ajustados no código para maior precisão, d
 - Trabalhar com sensores analógicos  
 - Desenvolver lógica condicional  
 - Simular automação real  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Arduino  
+- Tinkercad  
+- Simulação de circuitos eletrônicos  
 
 ---
 
