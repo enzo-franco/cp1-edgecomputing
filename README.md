@@ -1,55 +1,115 @@
-# 🍷 Projeto Arduino - Vinheria Agnello
+# 🍷 Vinheria Inteligente com Arduino
 
-## 📌 Explicação do Projeto
-
-Este projeto consiste no desenvolvimento de uma vinheria inteligente utilizando Arduino, com simulação realizada na plataforma Tinkercad.
-
-A proposta é demonstrar como a tecnologia pode ser aplicada no armazenamento de vinhos, garantindo melhores condições de conservação por meio do monitoramento e controle de variáveis do ambiente.
-
-No protótipo desenvolvido, foram utilizados componentes eletrônicos simulados para representar o funcionamento de um sistema automatizado. A lógica implementada permite a leitura de dados do ambiente e a ativação de elementos de resposta, como LEDs ou alertas, simulando ações que seriam tomadas em uma vinheria real.
-
-O sistema foi pensado para facilitar o controle das condições ideais de armazenamento, contribuindo para a preservação da qualidade dos vinhos. Além disso, o projeto aplica conceitos fundamentais de eletrônica e programação com Arduino, integrando teoria e prática de forma didática.
-
-Este trabalho foi desenvolvido como parte do Checkpoint 1 da FIAP, sob orientação do professor Lucas Demetrius Augusto.
----
-
-## 🎯 Objetivo
-Criar um sistema automatizado capaz de:
-- Monitorar condições do ambiente
-- Simular controle inteligente
-- Aplicar conceitos de Arduino na prática
+<p align="center">
+  <img src="https://img.shields.io/badge/Arduino-Project-blue?style=for-the-badge&logo=arduino">
+  <img src="https://img.shields.io/badge/FIAP-Checkpoint%201-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge">
+</p>
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-- Arduino
-- Tinkercad
+## 📌 Descrição
+
+Este projeto simula o funcionamento de uma **vinheria inteligente**, utilizando Arduino para monitorar a luminosidade do ambiente.
+
+A proposta é demonstrar como a automação pode ser aplicada para preservar a qualidade dos vinhos, evitando exposição excessiva à luz.
+
+---
+
+## 📖 Explicação do Projeto
+
+O sistema utiliza um sensor **LDR (Light Dependent Resistor)** para medir a intensidade luminosa do ambiente.
+
+Com base nesses dados, o Arduino classifica a luminosidade em diferentes níveis e aciona LEDs indicadores para representar a condição do ambiente.
+
+---
+
+## ⚙️ Componentes Utilizados
+
+- 🔌 1x Arduino Uno  
+- 🌗 1x LDR (sensor de luminosidade)  
+- 🔧 1x Resistor 10kΩ (divisor de tensão)  
+- 💡 3x LEDs:
+  - 🟢 Verde → luminosidade ideal  
+  - 🟡 Amarelo → atenção  
+  - 🔵 Azul → alta luminosidade  
+- 🔩 3x Resistores 220Ω  
+- 🧩 Protoboard  
+- 🔗 Jumpers  
+
+---
+
+## 🔌 Funcionamento
+
+O LDR varia sua resistência de acordo com a luz:
+
+- Mais luz → menor resistência  
+- Menos luz → maior resistência  
+
+O Arduino lê esses valores e define o estado do ambiente:
+
+| Condição        | Ação do Sistema |
+|----------------|----------------|
+| Baixa luz      | LED verde      |
+| Luz moderada   | LED amarelo    |
+| Alta luz       | LED azul       |
+
+---
+
+## 🧠 Lógica do Sistema
+
+- Leitura analógica do LDR (0 a 1023)  
+- Processamento com `if/else`  
+- Acionamento dos LEDs conforme o nível de luminosidade  
+
+---
+
+## 🔍 Observação Técnica
+
+Os valores de referência podem ser ajustados no código para maior precisão, dependendo da iluminação do ambiente.
+
+---
+
+## 🎯 Objetivos
+
+- Aplicar conceitos de Arduino  
+- Trabalhar com sensores analógicos  
+- Desenvolver lógica condicional  
+- Simular automação real  
 
 ---
 
 ## 🔗 Acesse o Projeto
 
-👉 **Tinkercad (Simulação):**  
-https://www.tinkercad.com/things/aF9FaJ41QnE-cpedge-projeto-vineheria?sharecode=4txdFv2fwuYmNPM_Ady9f2_K5OEiAhKL1tHLwtedA0M
+👉 **Tinkercad:**  
+https://www.tinkercad.com/things/aF9FaJ41QnE-cpedge-projeto-vineheria?sharecode=4txdFv2fwuYmNPM_Ady9f2_K5OEiAhKL1tHLwtedA0M  
 
 ---
 
-## 🎥 Vídeo do Projeto
+## 🎥 Demonstração
 
-👉 **Demonstração no YouTube:**  
-https://youtu.be/EX6CnPGPtnM
+👉 **Vídeo no YouTube:**  
+https://youtu.be/EX6CnPGPtnM  
 
 ---
 
 ## 👨‍💻 Integrantes
+
 - Enzo Franco Rodrigues da Silva  
 - Matheus Soares Amorim  
 - Renato Mendes Ruiz  
 - Gustavo Roberto Martins  
-- Julia Moreira Rodrigues
+- Julia Moreira Rodrigues  
 
 ---
 
+## 📚 Contexto Acadêmico
+
+Projeto desenvolvido para o **Checkpoint 1 da FIAP**, sob orientação do professor **Lucas Demetrius Augusto**.
+
+---
 
 ## ✅ Status
-✔️ Projeto finalizado para entrega acadêmica
+
+✔️ Projeto finalizado  
+🚀 Pronto para entrega  
